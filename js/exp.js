@@ -3,7 +3,7 @@ var vexp=document.getElementById("viewexp");
 var it=document.getElementById("items");
 fexp.style.display="none";
 vexp.style.display="none";
-it.style.display="none";
+
 function addexps()
 {
     fexp.style.display="block";
