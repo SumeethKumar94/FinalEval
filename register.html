@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Track Expense Register Form</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <style src="style/style.css"></style>
+  <script src="js/allvalid.js"> 
+   </script>
+    </head>
+    <body class="bg-dark text-light">
+        <div class="container d-flex justify-content-center">
+        <form id="form" name="form" class="form-group " method="POST" onsubmit="return validate(this)">
+            <div class="container  md"><br>
+                <h2 style="color:gold;">Registration form</h2>
+            <label for="name"><b>Full Name</b></label><br>
+            <input type="text" placeholder="Full Name" name="name" id="name1" onblur="fname()" required>
+            <p id="fn" class=" text-danger"></p>
+            
+            <label for="email"><b>Email address</b></label><br>
+            <input type="email" placeholder="Enter Email" name="email" id="email" onblur="eml()" required>
+            <p id="em" class=" text-danger"></p>
+            
+        
+            <label for="phone"><b>Phone  (Enter only 10 digit number)</b></label>
+            <br>
+            <input type="text" placeholder="Phone Number" name="phone" id="phone" onblur="phon()" required>
+            <p id="ph" class=" text-danger"></p>
+         
+         <br>
+         <label for="add"><b>Address</b></label>
+            <BR>
+            <textarea row="50" cols="30">
+
+            </textarea>
+            <p id="ps" class=" text-danger"></p>
+
+        
+            <label for="pass"><b>Password</b></label>
+            <BR>
+            <input type="password" placeholder="Enter Password" name="pass" id="pass" onblur="pas()" required>
+            <p id="ps" class=" text-danger"></p>
+            
+         
+            <label for="con"><b>Confirm Password</b></label><br>
+            <input type="password" placeholder="Repeat Password" name="conps" id="con" onblur="cpass()" required>
+            <p id="cn" class=" text-danger"></p>
+            
+<br> 
+            <button type="submit" class="btn btn-warning">Register</button>
+            <p id="err" class="text-warning"> </p>
+          </div>
+        </form>
+        </div>
+    </body>
+</html>
