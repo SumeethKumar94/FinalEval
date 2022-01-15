@@ -47,7 +47,7 @@ __decorate([
 ], Users.prototype, "Password", void 0);
 const UserName = document.querySelector('#login');
 const Password = document.querySelector('#password');
-const forms = document.querySelector('#form');
+const forms = document.getElementById("form");
 forms.addEventListener('submit', (event) => {
     event.preventDefault();
     const UserOne = UserName.value;
@@ -58,10 +58,12 @@ forms.addEventListener('submit', (event) => {
         return;
     }
     else {
+
         sampleLogin();
     }
     console.log(UsersObj);
 });
+
 function sampleLogin() {
     const login = document.getElementById("login");
     const password = document.getElementById("password");
@@ -100,4 +102,6 @@ function sampleLogin() {
             invalidLogin.style.display = "block";
         }
     });
+
+
 }
