@@ -1,3 +1,5 @@
+// Register Form.
+
 const loginForm = document.getElementById("loginf");
 const loginButton = document.getElementById("lsubmit");
 const loginErrorMsg = document.getElementById("p");
@@ -184,5 +186,7 @@ else
 }
 
 }
+
+
 
 

@@ -12,13 +12,34 @@ h2
     color:gold;
 
 }
- #ng
+h3
+{
+    color:azure;
+}
 
- {
-    text-align: center;
-    color:white;
- }
  label
  {
      color:white;
  }
+
+ .buttons
+
+{
+    display:flex;
+    justify-content:space-between;
+   
+}
+
+
+#ng
+
+{
+   text-align: center;
+   color:white;
+}
+
+
+#viewexp
+{
+    text-align: center;
+}

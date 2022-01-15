@@ -15,10 +15,127 @@
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css" />
   </head>
-<body>
+<body class="bg-dark">
     <h1>Track Expenses</h1>
-    <div class="container">
-        
-    </div>
-</body>
+    <body>
+ 
+        <div class="container main">
+    <br><br> <h2 style="color: aliceblue;">Welcome Sumeeth !</h2><br><br>
+          <div class="buttons">
+            <button class="btn btn-warning" id="addExpenseBtn" onclick="addexps()">Add Expense</button>
+            <button class="btn btn-warning" id="ViewBtn" onclick="viewexps()">View Expense</button>
+          </div>
+          <!--  View Expense Section -->
+          <div class="container view-expense" id="viewexp">
+           <h3>Name: Sumeeth </h3><br>
+            <h3>Phone no: 9873516914</h3>
+            <h3> Total Expenses / Month: <br> $1926.30 </h3>
+            <img  height="400" width="300" src="https://cdn.dribbble.com/users/60016/screenshots/3194774/attachments/680765/real-pixels-16px.png">
+
+              </div>
+          <!-- Add Expense Section -->
+
+          <div class="container add-expense" id="addexp">
+              
+            <form  class="" id="addExpenseForm" method="post">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Expense Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter Expense "
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Expense Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="exampleFormControlSelect1"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Expense Amount</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Enter Expense Amount"
+                  required
+                />
+              </div>
+    
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Expense Type</label>
+                <select class="form-control" id="exampleFormControlSelect1" required>
+                  <option></option>
+                  <option>Food</option>
+                  <option>Water</option>
+                  <option>Grocery</option>
+                  <option>Rent</option>
+                  <option>Electricity</option>
+                  <option>Entertainment</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Expense Description</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+    
+              <!-- individual items -->
+              <h4>Individual Items</h4>
+              <button class="btn btn-primary" id="addItemBtn" onclick="shoitems()">
+               Add Items
+              </button>
+    
+              <div class="form-group hide" id="items">
+                <label for="exampleFormControlSelect1">Expense Items</label>
+                <div class="row">
+                  <div class="col-md-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlSelect1"
+                      placeholder="Enter Item Name"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlSelect1"
+                      placeholder="Enter Item Amount"
+                    />
+                  </div>
+                  <div class="btn btn-primary col-md-4">Add</div>
+                </div>
+              </div>
+    
+              <!-- end individual items  -->
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Expense Image/Bills</label>
+                <input
+                  type="file"
+                  class="form-control-file"
+                  id="exampleFormControlFile1"
+                />
+              </div>
+            </form>
+            <input type="submit" class="btn btn-primary" id="submitBtn" value="Submit">
+     
+          </div>
+    
+          <!-- end add expense section -->
+          
+    
+          <!-- end all expenses -->
+        </div>
+      </body>
+<script src="js/exp.js"></script>
   </html>
